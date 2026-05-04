@@ -1,0 +1,48 @@
+no change     /home/soft/anaconda3/condabin/conda
+no change     /home/soft/anaconda3/bin/conda
+no change     /home/soft/anaconda3/bin/conda-env
+no change     /home/soft/anaconda3/bin/activate
+no change     /home/soft/anaconda3/bin/deactivate
+no change     /home/soft/anaconda3/etc/profile.d/conda.sh
+no change     /home/soft/anaconda3/etc/fish/conf.d/conda.fish
+no change     /home/soft/anaconda3/shell/condabin/Conda.psm1
+no change     /home/soft/anaconda3/shell/condabin/conda-hook.ps1
+no change     /home/soft/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /home/soft/anaconda3/etc/profile.d/conda.csh
+modified      /home/kamakshi.rautela/.bashrc
+
+==> For changes to take effect, close and re-open your current shell. <==
+
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+No normalization for NumAmideBonds. Feature removed!
+No normalization for NumAtomStereoCenters. Feature removed!
+No normalization for NumBridgeheadAtoms. Feature removed!
+No normalization for NumHeterocycles. Feature removed!
+No normalization for NumSpiroAtoms. Feature removed!
+No normalization for NumUnspecifiedAtomStereoCenters. Feature removed!
+No normalization for Phi. Feature removed!
+Skipped loading some Tensorflow models, missing a dependency. No module named 'tensorflow'
+Skipped loading modules with pytorch-geometric dependency, missing a dependency. No module named 'dgl'
+Skipped loading modules with transformers dependency. No module named 'transformers.models.roberta.tokenization_roberta_fast'
+cannot import name 'Chemberta' from 'deepchem.models.torch_models' (/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/deepchem/models/torch_models/__init__.py)
+Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'lightning'
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+Skipped loading some PyTorch models, missing a dependency. No module named 'tensorflow'
+Loading ESOL Dataset from local folder: ./esol_data
+Initializing GCNModel on CUDA...
+Traceback (most recent call last):
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/deepchem/models/torch_models/gcn.py", line 119, in __init__
+    import dgl  # noqa: F401
+ModuleNotFoundError: No module named 'dgl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kamakshi.rautela/NeuroChem_Minor/./train_esol.py", line 28, in <module>
+    model = GCNModel(
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/deepchem/models/torch_models/gcn.py", line 305, in __init__
+    model = GCN(n_tasks=n_tasks,
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/deepchem/models/torch_models/gcn.py", line 121, in __init__
+    raise ImportError('This class requires dgl.')
+ImportError: This class requires dgl.

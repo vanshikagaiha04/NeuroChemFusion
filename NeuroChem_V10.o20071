@@ -1,0 +1,109 @@
+Starting NeuroChem Fusion V15 (SOTA Cross-Modal) Run on H100...
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+No normalization for NumAmideBonds. Feature removed!
+No normalization for NumAtomStereoCenters. Feature removed!
+No normalization for NumBridgeheadAtoms. Feature removed!
+No normalization for NumHeterocycles. Feature removed!
+No normalization for NumSpiroAtoms. Feature removed!
+No normalization for NumUnspecifiedAtomStereoCenters. Feature removed!
+No normalization for Phi. Feature removed!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776751578.915948 2190202 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1776751579.026634 2190202 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776751583.052923 2190202 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py:588: calling function (from tensorflow.python.eager.polymorphic_function.polymorphic_function) with experimental_relax_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+experimental_relax_shapes is deprecated, use reduce_retracing instead
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_scatter/_scatter_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-spline-conv'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_spline_conv/_basis_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_sparse/_spmm_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'lightning'
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:164: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, xz, conv1d_weight, conv1d_bias, x_proj_weight, delta_proj_weight,
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:240: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:986: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:1045: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:26: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, x, weight, bias, process_group=None, sequence_parallel=True):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:62: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:758: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, zxbcdt, conv1d_weight, conv1d_bias, dt_bias, A, D, chunk_size, initial_states=None, seq_idx=None, dt_limit=(0.0, float("inf")), return_final_states=False, activation="silu",
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:836: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+
+>>> Starting V15 Training (Physics Contrastive Alignment + SWA)...
+Epoch 002 | Loss: 0.5144 | Val R²: 0.4261
+Epoch 004 | Loss: 0.4502 | Val R²: 0.5133
+Epoch 006 | Loss: 0.4471 | Val R²: 0.5390
+Epoch 008 | Loss: 0.4169 | Val R²: 0.5167
+Epoch 010 | Loss: 0.4020 | Val R²: 0.5526
+Epoch 012 | Loss: 0.4279 | Val R²: 0.5600
+Epoch 014 | Loss: 0.3639 | Val R²: 0.5551
+Epoch 016 | Loss: 0.3803 | Val R²: 0.5690
+Epoch 018 | Loss: 0.3771 | Val R²: 0.5707
+Epoch 020 | Loss: 0.3592 | Val R²: 0.5697
+Epoch 022 | Loss: 0.3544 | Val R²: 0.5788
+Epoch 024 | Loss: 0.3358 | Val R²: 0.5934
+Epoch 026 | Loss: 0.3112 | Val R²: 0.5838
+Epoch 028 | Loss: 0.3322 | Val R²: 0.5966
+Epoch 030 | Loss: 0.3188 | Val R²: 0.5931
+Epoch 032 | Loss: 0.3043 | Val R²: 0.6033
+Epoch 034 | Loss: 0.3035 | Val R²: 0.6131
+Epoch 036 | Loss: 0.2781 | Val R²: 0.6049
+Epoch 038 | Loss: 0.2879 | Val R²: 0.6105
+Epoch 040 | Loss: 0.2952 | Val R²: 0.6105
+Epoch 042 | Loss: 0.2907 | Val R²: 0.6242
+Epoch 044 | Loss: 0.3053 | Val R²: 0.6173
+Epoch 046 | Loss: 0.2856 | Val R²: 0.6112
+Epoch 048 | Loss: 0.2898 | Val R²: 0.6266
+Epoch 050 | Loss: 0.2700 | Val R²: 0.6184
+Epoch 052 | Loss: 0.2831 | Val R²: 0.6280 (SWA)
+Epoch 054 | Loss: 0.2723 | Val R²: 0.6280 (SWA)
+Epoch 056 | Loss: 0.2489 | Val R²: 0.6262 (SWA)
+Epoch 058 | Loss: 0.2527 | Val R²: 0.6269 (SWA)
+Epoch 060 | Loss: 0.2484 | Val R²: 0.6266 (SWA)
+Epoch 062 | Loss: 0.2460 | Val R²: 0.6270 (SWA)
+Epoch 064 | Loss: 0.2356 | Val R²: 0.6272 (SWA)
+Epoch 066 | Loss: 0.2437 | Val R²: 0.6277 (SWA)
+Epoch 068 | Loss: 0.2436 | Val R²: 0.6277 (SWA)
+Epoch 070 | Loss: 0.2504 | Val R²: 0.6279 (SWA)
+Epoch 072 | Loss: 0.2389 | Val R²: 0.6279 (SWA)
+Epoch 074 | Loss: 0.2472 | Val R²: 0.6279 (SWA)
+Epoch 076 | Loss: 0.2485 | Val R²: 0.6279 (SWA)
+Epoch 078 | Loss: 0.2507 | Val R²: 0.6281 (SWA)
+Epoch 080 | Loss: 0.2325 | Val R²: 0.6279 (SWA)
+Epoch 082 | Loss: 0.2384 | Val R²: 0.6275 (SWA)
+Epoch 084 | Loss: 0.2420 | Val R²: 0.6273 (SWA)
+Epoch 086 | Loss: 0.2288 | Val R²: 0.6272 (SWA)
+Epoch 088 | Loss: 0.2232 | Val R²: 0.6273 (SWA)
+Epoch 090 | Loss: 0.2289 | Val R²: 0.6274 (SWA)
+Epoch 092 | Loss: 0.2346 | Val R²: 0.6272 (SWA)
+Epoch 094 | Loss: 0.2295 | Val R²: 0.6273 (SWA)
+Epoch 096 | Loss: 0.2321 | Val R²: 0.6273 (SWA)
+Epoch 098 | Loss: 0.2318 | Val R²: 0.6272 (SWA)
+Epoch 100 | Loss: 0.2338 | Val R²: 0.6271 (SWA)
+Epoch 102 | Loss: 0.2325 | Val R²: 0.6271 (SWA)
+Epoch 104 | Loss: 0.2235 | Val R²: 0.6271 (SWA)
+Epoch 106 | Loss: 0.2293 | Val R²: 0.6268 (SWA)
+Epoch 108 | Loss: 0.2225 | Val R²: 0.6266 (SWA)
+
+[!] Early Stopping triggered at Epoch 108 (Peak R² was 0.6281)
+
+>>> Loading Best Model for Testing...
+
+============================================================
+NEUROCHEM FUSION V15 (CONTRASTIVE PHYSICS) - FINAL RESULTS
+Test Pearson R²: 0.5505
+Sigmoid Gate Weights → seq: 0.635 | phys: 0.688 | graph: 0.516
+============================================================

@@ -1,0 +1,2 @@
+export KAGGLE_USERNAME="vanshikagaiha04"
+export KAGGLE_KEY="KGAT_1b44d6b1c661b17d08e86f2d54791e08"

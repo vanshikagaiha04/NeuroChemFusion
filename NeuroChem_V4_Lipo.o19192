@@ -1,0 +1,69 @@
+Starting NeuroChem Fusion V4 Optimized Run on H100...
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+No normalization for NumAmideBonds. Feature removed!
+No normalization for NumAtomStereoCenters. Feature removed!
+No normalization for NumBridgeheadAtoms. Feature removed!
+No normalization for NumHeterocycles. Feature removed!
+No normalization for NumSpiroAtoms. Feature removed!
+No normalization for NumUnspecifiedAtomStereoCenters. Feature removed!
+No normalization for Phi. Feature removed!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776319557.822321 3752955 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1776319559.704880 3752955 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776319568.525332 3752955 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py:588: calling function (from tensorflow.python.eager.polymorphic_function.polymorphic_function) with experimental_relax_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+experimental_relax_shapes is deprecated, use reduce_retracing instead
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_scatter/_scatter_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-spline-conv'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_spline_conv/_basis_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_sparse/_spmm_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'lightning'
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:164: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, xz, conv1d_weight, conv1d_bias, x_proj_weight, delta_proj_weight,
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:240: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:986: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:1045: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:26: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, x, weight, bias, process_group=None, sequence_parallel=True):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:62: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:758: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, zxbcdt, conv1d_weight, conv1d_bias, dt_bias, A, D, chunk_size, initial_states=None, seq_idx=None, dt_limit=(0.0, float("inf")), return_final_states=False, activation="silu",
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:836: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+>>> Loading Data & RDKit Descriptors...
+>>> Applying Normalization...
+
+>>> Starting End-to-End Fusion Training...
+Epoch 005 | Loss: 0.1108 | Val R²: 0.5396
+Epoch 010 | Loss: 0.0770 | Val R²: 0.5498
+Epoch 015 | Loss: 0.0613 | Val R²: 0.5590
+Epoch 020 | Loss: 0.0530 | Val R²: 0.5596
+Epoch 025 | Loss: 0.0439 | Val R²: 0.5809
+Epoch 030 | Loss: 0.0390 | Val R²: 0.5850
+Epoch 035 | Loss: 0.0305 | Val R²: 0.5659
+Epoch 040 | Loss: 0.0286 | Val R²: 0.5582
+Epoch 045 | Loss: 0.0242 | Val R²: 0.5625
+Epoch 050 | Loss: 0.0234 | Val R²: 0.5533
+Epoch 055 | Loss: 0.0212 | Val R²: 0.5477
+Epoch 060 | Loss: 0.0181 | Val R²: 0.5550
+Epoch 065 | Loss: 0.0165 | Val R²: 0.5476
+Epoch 070 | Loss: 0.0155 | Val R²: 0.5507
+Epoch 075 | Loss: 0.0142 | Val R²: 0.5612
+Epoch 080 | Loss: 0.0134 | Val R²: 0.5498
+Epoch 085 | Loss: 0.0121 | Val R²: 0.5491
+Epoch 090 | Loss: 0.0124 | Val R²: 0.5497
+Epoch 095 | Loss: 0.0117 | Val R²: 0.5551
+Epoch 100 | Loss: 0.0102 | Val R²: 0.5633
+
+>>> Training Complete! All 3 features working end-to-end.

@@ -1,0 +1,60 @@
+no change     /home/soft/anaconda3/condabin/conda
+no change     /home/soft/anaconda3/bin/conda
+no change     /home/soft/anaconda3/bin/conda-env
+no change     /home/soft/anaconda3/bin/activate
+no change     /home/soft/anaconda3/bin/deactivate
+no change     /home/soft/anaconda3/etc/profile.d/conda.sh
+no change     /home/soft/anaconda3/etc/fish/conf.d/conda.fish
+no change     /home/soft/anaconda3/shell/condabin/Conda.psm1
+no change     /home/soft/anaconda3/shell/condabin/conda-hook.ps1
+no change     /home/soft/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /home/soft/anaconda3/etc/profile.d/conda.csh
+no change     /home/kamakshi.rautela/.bashrc
+No action taken.
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+No normalization for NumAmideBonds. Feature removed!
+No normalization for NumAtomStereoCenters. Feature removed!
+No normalization for NumBridgeheadAtoms. Feature removed!
+No normalization for NumHeterocycles. Feature removed!
+No normalization for NumSpiroAtoms. Feature removed!
+No normalization for NumUnspecifiedAtomStereoCenters. Feature removed!
+No normalization for Phi. Feature removed!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776055816.011770 3619132 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1776055816.055217 3619132 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776055817.884031 3619132 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py:588: calling function (from tensorflow.python.eager.polymorphic_function.polymorphic_function) with experimental_relax_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+experimental_relax_shapes is deprecated, use reduce_retracing instead
+Traceback (most recent call last):
+  File "/home/kamakshi.rautela/NeuroChem_Minor/./train_esol.py", line 5, in <module>
+    import deepchem as dc
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/deepchem/__init__.py", line 10, in <module>
+    import deepchem.hyper
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/deepchem/hyper/__init__.py", line 2, in <module>
+    from deepchem.hyper.base_classes import HyperparamOpt
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/deepchem/hyper/base_classes.py", line 6, in <module>
+    from deepchem.models import Model
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/deepchem/models/__init__.py", line 41, in <module>
+    from deepchem.models.torch_models import TorchModel
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/deepchem/models/torch_models/__init__.py", line 35, in <module>
+    from deepchem.models.torch_models.pna_gnn import AtomEncoder, BondEncoder, PNALayer, PNAGNN, PNA
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/deepchem/models/torch_models/pna_gnn.py", line 5, in <module>
+    import dgl
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/dgl/__init__.py", line 16, in <module>
+    from . import (
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/dgl/dataloading/__init__.py", line 13, in <module>
+    from .dataloader import *
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/dgl/dataloading/dataloader.py", line 27, in <module>
+    from ..distributed import DistGraph
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/dgl/distributed/__init__.py", line 5, in <module>
+    from .dist_graph import DistGraph, DistGraphServer, edge_split, node_split
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/dgl/distributed/dist_graph.py", line 11, in <module>
+    from .. import backend as F, graphbolt as gb, heterograph_index
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/dgl/graphbolt/__init__.py", line 29
+    def #load_graphbolt():
+        ^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax

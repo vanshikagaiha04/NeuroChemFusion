@@ -1,0 +1,285 @@
+==========================================================
+LAUNCHING FINAL MASTER EVALUATION
+START TIME: Sun May  3 10:43:18 PM IST 2026
+MODELS: BBBP MASTER & TOX21 MASTER
+==========================================================
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+No normalization for NumAmideBonds. Feature removed!
+No normalization for NumAtomStereoCenters. Feature removed!
+No normalization for NumBridgeheadAtoms. Feature removed!
+No normalization for NumHeterocycles. Feature removed!
+No normalization for NumSpiroAtoms. Feature removed!
+No normalization for NumUnspecifiedAtomStereoCenters. Feature removed!
+No normalization for Phi. Feature removed!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777828448.104698 1624411 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1777828455.767900 1624411 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777828463.522813 1624411 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py:588: calling function (from tensorflow.python.eager.polymorphic_function.polymorphic_function) with experimental_relax_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+experimental_relax_shapes is deprecated, use reduce_retracing instead
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_scatter/_scatter_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-spline-conv'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_spline_conv/_basis_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_sparse/_spmm_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'lightning'
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+>>> Initializing Final Evaluation on: cuda
+>>> Master Weights Loaded.
+
+=================================================================
+TASK       | TYPE         | METRIC          | SCORE     
+-----------------------------------------------------------------
+[22:44:42] Explicit valence for atom # 1 N, 4, is greater than permitted
+Failed to featurize datapoint 59, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:44:42] WARNING: not removing hydrogen atom without neighbors
+[22:44:42] WARNING: not removing hydrogen atom without neighbors
+[22:44:42] Explicit valence for atom # 6 N, 4, is greater than permitted
+Failed to featurize datapoint 61, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:44:43] WARNING: not removing hydrogen atom without neighbors
+[22:44:43] WARNING: not removing hydrogen atom without neighbors
+[22:44:43] WARNING: not removing hydrogen atom without neighbors
+[22:44:43] WARNING: not removing hydrogen atom without neighbors
+[22:44:44] WARNING: not removing hydrogen atom without neighbors
+[22:44:44] WARNING: not removing hydrogen atom without neighbors
+[22:44:44] WARNING: not removing hydrogen atom without neighbors
+[22:44:44] WARNING: not removing hydrogen atom without neighbors
+[22:44:44] WARNING: not removing hydrogen atom without neighbors
+[22:44:44] WARNING: not removing hydrogen atom without neighbors
+[22:44:44] WARNING: not removing hydrogen atom without neighbors
+[22:44:44] WARNING: not removing hydrogen atom without neighbors
+[22:44:45] Explicit valence for atom # 6 N, 4, is greater than permitted
+Failed to featurize datapoint 391, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:44:45] WARNING: not removing hydrogen atom without neighbors
+[22:44:45] WARNING: not removing hydrogen atom without neighbors
+[22:44:45] WARNING: not removing hydrogen atom without neighbors
+[22:44:45] WARNING: not removing hydrogen atom without neighbors
+[22:44:46] WARNING: not removing hydrogen atom without neighbors
+[22:44:46] WARNING: not removing hydrogen atom without neighbors
+[22:44:46] WARNING: not removing hydrogen atom without neighbors
+[22:44:46] WARNING: not removing hydrogen atom without neighbors
+[22:44:46] Explicit valence for atom # 11 N, 4, is greater than permitted
+Failed to featurize datapoint 614, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:44:47] Explicit valence for atom # 12 N, 4, is greater than permitted
+Failed to featurize datapoint 642, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:44:47] Explicit valence for atom # 5 N, 4, is greater than permitted
+Failed to featurize datapoint 645, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:44:47] Explicit valence for atom # 5 N, 4, is greater than permitted
+Failed to featurize datapoint 646, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:44:47] Explicit valence for atom # 5 N, 4, is greater than permitted
+Failed to featurize datapoint 647, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:44:47] Explicit valence for atom # 5 N, 4, is greater than permitted
+Failed to featurize datapoint 648, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:44:47] Explicit valence for atom # 5 N, 4, is greater than permitted
+Failed to featurize datapoint 649, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:44:47] WARNING: not removing hydrogen atom without neighbors
+[22:44:47] WARNING: not removing hydrogen atom without neighbors
+[22:44:47] WARNING: not removing hydrogen atom without neighbors
+[22:44:47] WARNING: not removing hydrogen atom without neighbors
+[22:44:47] Explicit valence for atom # 5 N, 4, is greater than permitted
+Failed to featurize datapoint 685, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:44:47] WARNING: not removing hydrogen atom without neighbors
+[22:44:47] WARNING: not removing hydrogen atom without neighbors
+[22:44:49] WARNING: not removing hydrogen atom without neighbors
+[22:44:49] WARNING: not removing hydrogen atom without neighbors
+[22:44:50] WARNING: not removing hydrogen atom without neighbors
+[22:44:50] WARNING: not removing hydrogen atom without neighbors
+[22:44:50] WARNING: not removing hydrogen atom without neighbors
+[22:44:50] WARNING: not removing hydrogen atom without neighbors
+[22:44:51] WARNING: not removing hydrogen atom without neighbors
+[22:44:51] WARNING: not removing hydrogen atom without neighbors
+[22:44:51] WARNING: not removing hydrogen atom without neighbors
+[22:44:51] WARNING: not removing hydrogen atom without neighbors
+[22:44:52] WARNING: not removing hydrogen atom without neighbors
+[22:44:52] WARNING: not removing hydrogen atom without neighbors
+[22:44:52] WARNING: not removing hydrogen atom without neighbors
+[22:44:52] WARNING: not removing hydrogen atom without neighbors
+[22:44:53] WARNING: not removing hydrogen atom without neighbors
+[22:44:53] WARNING: not removing hydrogen atom without neighbors
+[22:44:53] WARNING: not removing hydrogen atom without neighbors
+[22:44:53] WARNING: not removing hydrogen atom without neighbors
+[22:44:53] WARNING: not removing hydrogen atom without neighbors
+[22:44:53] WARNING: not removing hydrogen atom without neighbors
+[22:44:53] WARNING: not removing hydrogen atom without neighbors
+[22:44:53] WARNING: not removing hydrogen atom without neighbors
+[22:44:54] WARNING: not removing hydrogen atom without neighbors
+[22:44:54] WARNING: not removing hydrogen atom without neighbors
+[22:44:54] WARNING: not removing hydrogen atom without neighbors
+[22:44:54] WARNING: not removing hydrogen atom without neighbors
+[22:44:54] WARNING: not removing hydrogen atom without neighbors
+[22:44:54] WARNING: not removing hydrogen atom without neighbors
+[22:44:55] WARNING: not removing hydrogen atom without neighbors
+[22:44:55] WARNING: not removing hydrogen atom without neighbors
+[22:44:55] WARNING: not removing hydrogen atom without neighbors
+[22:44:55] WARNING: not removing hydrogen atom without neighbors
+[22:44:56] WARNING: not removing hydrogen atom without neighbors
+[22:44:56] WARNING: not removing hydrogen atom without neighbors
+[22:44:56] WARNING: not removing hydrogen atom without neighbors
+[22:44:56] WARNING: not removing hydrogen atom without neighbors
+[22:44:56] WARNING: not removing hydrogen atom without neighbors
+[22:44:56] WARNING: not removing hydrogen atom without neighbors
+[22:44:57] WARNING: not removing hydrogen atom without neighbors
+[22:44:57] WARNING: not removing hydrogen atom without neighbors
+[22:44:57] WARNING: not removing hydrogen atom without neighbors
+[22:44:57] WARNING: not removing hydrogen atom without neighbors
+[22:44:57] WARNING: not removing hydrogen atom without neighbors
+[22:44:57] WARNING: not removing hydrogen atom without neighbors
+[22:44:57] WARNING: not removing hydrogen atom without neighbors
+[22:44:57] WARNING: not removing hydrogen atom without neighbors
+[22:44:57] WARNING: not removing hydrogen atom without neighbors
+[22:44:57] WARNING: not removing hydrogen atom without neighbors
+[22:44:58] WARNING: not removing hydrogen atom without neighbors
+[22:44:58] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+Exception message: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (2050,) + inhomogeneous part.
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:44:59] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+[22:45:00] WARNING: not removing hydrogen atom without neighbors
+BBBP       | cls          | ROC-AUC         | 0.6367
+[22:45:03] WARNING: not removing hydrogen atom without neighbors
+[22:45:03] WARNING: not removing hydrogen atom without neighbors
+[22:45:11] Explicit valence for atom # 8 Al, 6, is greater than permitted
+Failed to featurize datapoint 1322, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:45:18] Explicit valence for atom # 3 Al, 6, is greater than permitted
+Failed to featurize datapoint 2290, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:45:18] Explicit valence for atom # 4 Al, 6, is greater than permitted
+Failed to featurize datapoint 2297, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:45:27] Explicit valence for atom # 4 Al, 6, is greater than permitted
+Failed to featurize datapoint 3558, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:45:33] Explicit valence for atom # 9 Al, 6, is greater than permitted
+Failed to featurize datapoint 4565, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:45:34] Explicit valence for atom # 5 Al, 6, is greater than permitted
+Failed to featurize datapoint 4649, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:45:41] Explicit valence for atom # 16 Al, 6, is greater than permitted
+Failed to featurize datapoint 5538, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:45:49] Explicit valence for atom # 20 Al, 6, is greater than permitted
+Failed to featurize datapoint 6723, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+Exception message: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (7831,) + inhomogeneous part.
+[22:45:57] WARNING: not removing hydrogen atom without neighbors
+TOX21      | cls          | ROC-AUC         | 0.5051
+ESOL       | reg          | R2-Score        | 0.6357
+LIPO       | reg          | R2-Score        | 0.1341
+=================================================================
+==========================================================
+EVALUATION FINISHED AT: Sun May  3 10:46:54 PM IST 2026
+CHECK THE OUTPUT ABOVE FOR FINAL AUC SCORES
+==========================================================

@@ -1,0 +1,13 @@
+/var/spool/pbs/mom_priv/jobs/19172.mgmt01.SC: line 1: import: command not found
+/var/spool/pbs/mom_priv/jobs/19172.mgmt01.SC: line 2: import: command not found
+/var/spool/pbs/mom_priv/jobs/19172.mgmt01.SC: line 3: import: command not found
+/var/spool/pbs/mom_priv/jobs/19172.mgmt01.SC: line 4: import: command not found
+/var/spool/pbs/mom_priv/jobs/19172.mgmt01.SC: line 5: import: command not found
+/var/spool/pbs/mom_priv/jobs/19172.mgmt01.SC: line 6: from: command not found
+/var/spool/pbs/mom_priv/jobs/19172.mgmt01.SC: line 7: from: command not found
+/var/spool/pbs/mom_priv/jobs/19172.mgmt01.SC: line 8: import: command not found
+/var/spool/pbs/mom_priv/jobs/19172.mgmt01.SC: line 9: from: command not found
+/var/spool/pbs/mom_priv/jobs/19172.mgmt01.SC: line 10: from: command not found
+/var/spool/pbs/mom_priv/jobs/19172.mgmt01.SC: line 13: os.environ[DGL_ENABLE_GRAPHBOLT]: command not found
+/var/spool/pbs/mom_priv/jobs/19172.mgmt01.SC: line 14: syntax error near unexpected token `"ignore"'
+/var/spool/pbs/mom_priv/jobs/19172.mgmt01.SC: line 14: `warnings.filterwarnings("ignore")'

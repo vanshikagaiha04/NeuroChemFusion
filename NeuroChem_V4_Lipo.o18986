@@ -1,0 +1,83 @@
+Starting NeuroChem Fusion V4 Optimized Run on H100...
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+No normalization for NumAmideBonds. Feature removed!
+No normalization for NumAtomStereoCenters. Feature removed!
+No normalization for NumBridgeheadAtoms. Feature removed!
+No normalization for NumHeterocycles. Feature removed!
+No normalization for NumSpiroAtoms. Feature removed!
+No normalization for NumUnspecifiedAtomStereoCenters. Feature removed!
+No normalization for Phi. Feature removed!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776158646.452448  484417 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1776158646.500619  484417 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776158648.302284  484417 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py:588: calling function (from tensorflow.python.eager.polymorphic_function.polymorphic_function) with experimental_relax_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+experimental_relax_shapes is deprecated, use reduce_retracing instead
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_scatter/_scatter_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-spline-conv'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_spline_conv/_basis_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_sparse/_spmm_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'lightning'
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:164: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, xz, conv1d_weight, conv1d_bias, x_proj_weight, delta_proj_weight,
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:240: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:986: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:1045: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:26: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, x, weight, bias, process_group=None, sequence_parallel=True):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:62: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:758: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, zxbcdt, conv1d_weight, conv1d_bias, dt_bias, A, D, chunk_size, initial_states=None, seq_idx=None, dt_limit=(0.0, float("inf")), return_final_states=False, activation="silu",
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:836: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+>>> Initializing Optimized Data Loading...
+>>> Applying Normalization Transformer...
+
+[DATA STATS]
+Train: 2688 | Valid: 336 | Test: 336
+
+>>> Starting Optimized Training...
+Epoch 010 | Train Loss: 0.2145 | Val R²: 0.5667 | LR: 0.000996
+Epoch 020 | Train Loss: 0.1640 | Val R²: 0.5974 | LR: 0.000984
+Epoch 030 | Train Loss: 0.1370 | Val R²: 0.5728 | LR: 0.000965
+Epoch 040 | Train Loss: 0.1300 | Val R²: 0.5587 | LR: 0.000939
+Epoch 050 | Train Loss: 0.1110 | Val R²: 0.5606 | LR: 0.000905
+Epoch 060 | Train Loss: 0.1110 | Val R²: 0.5835 | LR: 0.000866
+Epoch 070 | Train Loss: 0.0927 | Val R²: 0.5831 | LR: 0.000821
+Epoch 080 | Train Loss: 0.0974 | Val R²: 0.5499 | LR: 0.000770
+Epoch 090 | Train Loss: 0.0938 | Val R²: 0.5490 | LR: 0.000716
+Epoch 100 | Train Loss: 0.0772 | Val R²: 0.5581 | LR: 0.000658
+Epoch 110 | Train Loss: 0.0875 | Val R²: 0.5602 | LR: 0.000598
+Epoch 120 | Train Loss: 0.0751 | Val R²: 0.5596 | LR: 0.000536
+Epoch 130 | Train Loss: 0.0736 | Val R²: 0.5527 | LR: 0.000474
+Epoch 140 | Train Loss: 0.0730 | Val R²: 0.5652 | LR: 0.000412
+Epoch 150 | Train Loss: 0.0633 | Val R²: 0.5670 | LR: 0.000352
+Epoch 160 | Train Loss: 0.0674 | Val R²: 0.5617 | LR: 0.000294
+Epoch 170 | Train Loss: 0.0657 | Val R²: 0.5640 | LR: 0.000240
+Epoch 180 | Train Loss: 0.0565 | Val R²: 0.5702 | LR: 0.000189
+Epoch 190 | Train Loss: 0.0598 | Val R²: 0.5701 | LR: 0.000144
+Epoch 200 | Train Loss: 0.0560 | Val R²: 0.5677 | LR: 0.000105
+Epoch 210 | Train Loss: 0.0555 | Val R²: 0.5716 | LR: 0.000071
+Epoch 220 | Train Loss: 0.0568 | Val R²: 0.5700 | LR: 0.000045
+Epoch 230 | Train Loss: 0.0590 | Val R²: 0.5693 | LR: 0.000026
+Epoch 240 | Train Loss: 0.0538 | Val R²: 0.5694 | LR: 0.000014
+Epoch 250 | Train Loss: 0.0531 | Val R²: 0.5694 | LR: 0.000010
+
+>>> Loading Best Model for Test Evaluation...
+
+==================================================
+NEUROCHEM FUSION V4 OPTIMIZED - FINAL RESULTS
+Test Pearson R²: 0.5120
+Test MSE:        0.4511
+==================================================

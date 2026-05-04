@@ -1,0 +1,354 @@
+
+mgmt01: 
+                                                            Req'd  Req'd   Elap
+Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
+--------------- -------- -------- ---------- ------ --- --- ------ ----- - -----
+14170.mgmt01    llmapi   gpu      ollama_se* 22507*   1  64   80gb   --  R 1415: gpu01/3*64
+14197.mgmt01    llmapi   gpu      ollama_se* 17045*   1   1    --    --  R 1277: gpu02/0
+16504.mgmt01    konal.1* workq    no_comput* 10749*   1   1    --  9999: R 847:0 gpu01/5
+18173.mgmt01    llmapi   workq    vllm-qwop* 18704*   1  32  128gb   --  R 614:0 gpu02/3*32
+18275.mgmt01    aryan.1* workq    evalmate   12260*   1   1    --    --  R 604:2 gpu01/7
+18564.mgmt01    tarun.v* workq    g2_mo      32110*   1   1    --  1000: R 535:3 gpu02/1
+18606.mgmt01    tarun.v* gpu      g1_mo      27969*   1   1    --  1000: R 532:5 gpu01/2
+20123.mgmt01    rohites* gpu      test       20946*   1  10   10gb   --  R 240:3 gpu02/2*10
+21049.mgmt01    sanoj.k* gpu      modeldct1* 24111*   1  10   32gb   --  R 100:3 gpu02/8*10
+21427.mgmt01    samir.1* gpu      MDSR       37585*   1   8   80gb   --  R 36:59 gpu01/0*8
+21542.mgmt01    pranit.* gpu      pcen_ince* 17744*   1   8    --    --  R 23:08 gpu02/7*8
+21550.mgmt01    aantrik* gpu      gaitAnaly* 18282*   1  10  128gb   --  R 22:30 gpu02/6*10
+21559.mgmt01    sulabh.* gpu      PVR_LAB       --    1   5    --    --  H   --   -- 
+21575.mgmt01    rohites* gpu      app1       12005*   1  10   32gb   --  R 08:46 gpu01/8*10
+21596.mgmt01    ronit.2* gpu      resnet_tr* 12253*   1   8   64gb   --  R 07:36 gpu01/1*8
+21597.mgmt01    ronit.2* gpu      swin_mamb* 18159*   1   8   64gb   --  R 07:37 gpu02/4*8
+21624.mgmt01    rudra.1* gpu      research_* 12715*   1   8   80gb 30:00 R 05:09 gpu01/4*8
+21642.mgmt01    mayank.* gpu      Efficient*    --    1   4    --    --  H   --   -- 
+21650.mgmt01    yash.11* gpu      NIH_SWIN_*    --    1   8    --    --  H   --   -- 
+21655.mgmt01    soham.1* workq    traffic_ai    --    1   4    8gb 01:00 H   --   -- 
+21657.mgmt01    sachin.* gpu      nli_d3_d4     --    1   8    --    --  Q   --   -- 
+21662.mgmt01    kamaksh* gpu      NeuroChem*    --    1   4    --  04:00 R   --  gpu02/5*4
+21663.mgmt01    kamaksh* gpu      NeuroChem*    --    1   4    --  04:00 H   --   -- 
+21665.mgmt01    soham.1* workq    traffic_ai    --    1   4    8gb 02:00 H   --   -- 
+21666.mgmt01    somansh* gpu      comfyui       --    1   8   79gb 12:00 Q   --   -- 
+21668.mgmt01    kamaksh* gpu      Kan           --    1   4    --  02:00 Q   --   -- 
+21669.mgmt01    kamaksh* gpu      NeuroChem*    --    1   4    --  00:10 Q   --   -- 
+21670.mgmt01    vansh.1* gpu      multimoda* 21618*   1   4   64gb 24:00 R 01:17 gpu02/9*4
+21671.mgmt01    kamaksh* gpu      Kan           --    1   4    --  02:00 Q   --   -- 
+==========================================================
+LAUNCHING PHASE 2: TASK TRANSFER (BBBP + TOX21)
+START TIME: Sat May  2 10:23:15 PM IST 2026
+NODE: gpu02
+GPU INFO: NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+==========================================================
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+No normalization for NumAmideBonds. Feature removed!
+No normalization for NumAtomStereoCenters. Feature removed!
+No normalization for NumBridgeheadAtoms. Feature removed!
+No normalization for NumHeterocycles. Feature removed!
+No normalization for NumSpiroAtoms. Feature removed!
+No normalization for NumUnspecifiedAtomStereoCenters. Feature removed!
+No normalization for Phi. Feature removed!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777740799.672650 2224281 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1777740799.720678 2224281 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777740801.879691 2224281 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py:588: calling function (from tensorflow.python.eager.polymorphic_function.polymorphic_function) with experimental_relax_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+experimental_relax_shapes is deprecated, use reduce_retracing instead
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_scatter/_scatter_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-spline-conv'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_spline_conv/_basis_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_sparse/_spmm_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'lightning'
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:164: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, xz, conv1d_weight, conv1d_bias, x_proj_weight, delta_proj_weight,
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:240: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:986: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:1045: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:26: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, x, weight, bias, process_group=None, sequence_parallel=True):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:62: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:758: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, zxbcdt, conv1d_weight, conv1d_bias, dt_bias, A, D, chunk_size, initial_states=None, seq_idx=None, dt_limit=(0.0, float("inf")), return_final_states=False, activation="silu",
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:836: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+
+>>> Loading BBBP Offline...
+[22:23:25] Explicit valence for atom # 1 N, 4, is greater than permitted
+Failed to featurize datapoint 59, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:23:25] WARNING: not removing hydrogen atom without neighbors
+[22:23:25] WARNING: not removing hydrogen atom without neighbors
+[22:23:25] Explicit valence for atom # 6 N, 4, is greater than permitted
+Failed to featurize datapoint 61, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:23:26] WARNING: not removing hydrogen atom without neighbors
+[22:23:26] WARNING: not removing hydrogen atom without neighbors
+[22:23:26] WARNING: not removing hydrogen atom without neighbors
+[22:23:26] WARNING: not removing hydrogen atom without neighbors
+[22:23:26] WARNING: not removing hydrogen atom without neighbors
+[22:23:26] WARNING: not removing hydrogen atom without neighbors
+[22:23:27] WARNING: not removing hydrogen atom without neighbors
+[22:23:27] WARNING: not removing hydrogen atom without neighbors
+[22:23:27] WARNING: not removing hydrogen atom without neighbors
+[22:23:27] WARNING: not removing hydrogen atom without neighbors
+[22:23:27] WARNING: not removing hydrogen atom without neighbors
+[22:23:27] WARNING: not removing hydrogen atom without neighbors
+[22:23:27] Explicit valence for atom # 6 N, 4, is greater than permitted
+Failed to featurize datapoint 391, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:23:28] WARNING: not removing hydrogen atom without neighbors
+[22:23:28] WARNING: not removing hydrogen atom without neighbors
+[22:23:28] WARNING: not removing hydrogen atom without neighbors
+[22:23:28] WARNING: not removing hydrogen atom without neighbors
+[22:23:28] WARNING: not removing hydrogen atom without neighbors
+[22:23:28] WARNING: not removing hydrogen atom without neighbors
+[22:23:29] WARNING: not removing hydrogen atom without neighbors
+[22:23:29] WARNING: not removing hydrogen atom without neighbors
+[22:23:29] Explicit valence for atom # 11 N, 4, is greater than permitted
+Failed to featurize datapoint 614, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:23:29] Explicit valence for atom # 12 N, 4, is greater than permitted
+Failed to featurize datapoint 642, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:23:29] Explicit valence for atom # 5 N, 4, is greater than permitted
+Failed to featurize datapoint 645, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:23:29] Explicit valence for atom # 5 N, 4, is greater than permitted
+Failed to featurize datapoint 646, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:23:29] Explicit valence for atom # 5 N, 4, is greater than permitted
+Failed to featurize datapoint 647, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:23:29] Explicit valence for atom # 5 N, 4, is greater than permitted
+Failed to featurize datapoint 648, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:23:29] Explicit valence for atom # 5 N, 4, is greater than permitted
+Failed to featurize datapoint 649, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:23:29] WARNING: not removing hydrogen atom without neighbors
+[22:23:29] WARNING: not removing hydrogen atom without neighbors
+[22:23:29] WARNING: not removing hydrogen atom without neighbors
+[22:23:29] WARNING: not removing hydrogen atom without neighbors
+[22:23:29] Explicit valence for atom # 5 N, 4, is greater than permitted
+Failed to featurize datapoint 685, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:23:29] WARNING: not removing hydrogen atom without neighbors
+[22:23:29] WARNING: not removing hydrogen atom without neighbors
+[22:23:31] WARNING: not removing hydrogen atom without neighbors
+[22:23:31] WARNING: not removing hydrogen atom without neighbors
+[22:23:32] WARNING: not removing hydrogen atom without neighbors
+[22:23:32] WARNING: not removing hydrogen atom without neighbors
+[22:23:32] WARNING: not removing hydrogen atom without neighbors
+[22:23:32] WARNING: not removing hydrogen atom without neighbors
+[22:23:32] WARNING: not removing hydrogen atom without neighbors
+[22:23:32] WARNING: not removing hydrogen atom without neighbors
+[22:23:33] WARNING: not removing hydrogen atom without neighbors
+[22:23:33] WARNING: not removing hydrogen atom without neighbors
+[22:23:33] WARNING: not removing hydrogen atom without neighbors
+[22:23:33] WARNING: not removing hydrogen atom without neighbors
+[22:23:33] WARNING: not removing hydrogen atom without neighbors
+[22:23:33] WARNING: not removing hydrogen atom without neighbors
+[22:23:34] WARNING: not removing hydrogen atom without neighbors
+[22:23:34] WARNING: not removing hydrogen atom without neighbors
+[22:23:34] WARNING: not removing hydrogen atom without neighbors
+[22:23:34] WARNING: not removing hydrogen atom without neighbors
+[22:23:34] WARNING: not removing hydrogen atom without neighbors
+[22:23:34] WARNING: not removing hydrogen atom without neighbors
+[22:23:34] WARNING: not removing hydrogen atom without neighbors
+[22:23:34] WARNING: not removing hydrogen atom without neighbors
+[22:23:34] WARNING: not removing hydrogen atom without neighbors
+[22:23:34] WARNING: not removing hydrogen atom without neighbors
+[22:23:34] WARNING: not removing hydrogen atom without neighbors
+[22:23:34] WARNING: not removing hydrogen atom without neighbors
+[22:23:35] WARNING: not removing hydrogen atom without neighbors
+[22:23:35] WARNING: not removing hydrogen atom without neighbors
+[22:23:35] WARNING: not removing hydrogen atom without neighbors
+[22:23:35] WARNING: not removing hydrogen atom without neighbors
+[22:23:35] WARNING: not removing hydrogen atom without neighbors
+[22:23:35] WARNING: not removing hydrogen atom without neighbors
+[22:23:36] WARNING: not removing hydrogen atom without neighbors
+[22:23:36] WARNING: not removing hydrogen atom without neighbors
+[22:23:36] WARNING: not removing hydrogen atom without neighbors
+[22:23:36] WARNING: not removing hydrogen atom without neighbors
+[22:23:36] WARNING: not removing hydrogen atom without neighbors
+[22:23:36] WARNING: not removing hydrogen atom without neighbors
+[22:23:37] WARNING: not removing hydrogen atom without neighbors
+[22:23:37] WARNING: not removing hydrogen atom without neighbors
+[22:23:37] WARNING: not removing hydrogen atom without neighbors
+[22:23:37] WARNING: not removing hydrogen atom without neighbors
+[22:23:37] WARNING: not removing hydrogen atom without neighbors
+[22:23:37] WARNING: not removing hydrogen atom without neighbors
+[22:23:37] WARNING: not removing hydrogen atom without neighbors
+[22:23:37] WARNING: not removing hydrogen atom without neighbors
+[22:23:37] WARNING: not removing hydrogen atom without neighbors
+[22:23:37] WARNING: not removing hydrogen atom without neighbors
+[22:23:38] WARNING: not removing hydrogen atom without neighbors
+[22:23:38] WARNING: not removing hydrogen atom without neighbors
+[22:23:38] WARNING: not removing hydrogen atom without neighbors
+[22:23:38] WARNING: not removing hydrogen atom without neighbors
+Exception message: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (2050,) + inhomogeneous part.
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+[22:23:39] WARNING: not removing hydrogen atom without neighbors
+>>> SUCCESS: Pre-trained Backbone Loaded.
+>>> Training Specialist Head for bbbp...
+Epoch 025 | Loss: 0.3821
+Epoch 050 | Loss: 0.2918
+Epoch 075 | Loss: 0.2776
+Epoch 100 | Loss: 0.2674
+Epoch 125 | Loss: 0.3303
+Epoch 150 | Loss: 0.1390
+>>> [DONE] Specialist for bbbp saved.
+
+>>> Loading TOX21 Offline...
+[22:23:43] WARNING: not removing hydrogen atom without neighbors
+[22:23:43] WARNING: not removing hydrogen atom without neighbors
+[22:23:50] Explicit valence for atom # 8 Al, 6, is greater than permitted
+Failed to featurize datapoint 1322, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:23:55] Explicit valence for atom # 3 Al, 6, is greater than permitted
+Failed to featurize datapoint 2290, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:23:55] Explicit valence for atom # 4 Al, 6, is greater than permitted
+Failed to featurize datapoint 2297, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:24:01] Explicit valence for atom # 4 Al, 6, is greater than permitted
+Failed to featurize datapoint 3558, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:24:07] Explicit valence for atom # 9 Al, 6, is greater than permitted
+Failed to featurize datapoint 4565, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:24:07] Explicit valence for atom # 5 Al, 6, is greater than permitted
+Failed to featurize datapoint 4649, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:24:12] Explicit valence for atom # 16 Al, 6, is greater than permitted
+Failed to featurize datapoint 5538, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[22:24:18] Explicit valence for atom # 20 Al, 6, is greater than permitted
+Failed to featurize datapoint 6723, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+Exception message: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (7831,) + inhomogeneous part.
+[22:24:24] WARNING: not removing hydrogen atom without neighbors
+>>> SUCCESS: Pre-trained Backbone Loaded.
+>>> Training Specialist Head for tox21...
+Epoch 025 | Loss: 0.2425
+Epoch 050 | Loss: 0.2230
+Epoch 075 | Loss: 0.1790
+Epoch 100 | Loss: 0.1158
+Epoch 125 | Loss: 0.1952
+Epoch 150 | Loss: 0.1547
+>>> [DONE] Specialist for tox21 saved.
+==========================================================
+PHASE 2 FINISHED AT: Sat May  2 10:24:31 PM IST 2026
+SPECIALIST WEIGHTS SAVED: neurochem_bbbp_final.pt, neurochem_tox21_final.pt
+==========================================================

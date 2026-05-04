@@ -1,0 +1,237 @@
+Starting ViT ChestXray training...
+Class weights → Normal: 1.972, Pneumonia: 0.670
+
+Device: cuda
+
+───────────────────────────────────────────────────────
+ Training: V1-Baseline  (259,010 params)
+───────────────────────────────────────────────────────
+  Epoch   1/50 | train loss=0.5760 acc=0.6779 | val loss=0.4023 acc=0.8812
+  Epoch   2/50 | train loss=0.3614 acc=0.8519 | val loss=0.3020 acc=0.9138
+  Epoch   3/50 | train loss=0.3331 acc=0.8574 | val loss=0.3671 acc=0.7787
+  Epoch   4/50 | train loss=0.2869 acc=0.8854 | val loss=0.3072 acc=0.8132
+  Epoch   5/50 | train loss=0.2893 acc=0.8883 | val loss=0.2684 acc=0.8697
+  Epoch   6/50 | train loss=0.2650 acc=0.8912 | val loss=0.2041 acc=0.9234
+  Epoch   7/50 | train loss=0.2232 acc=0.9101 | val loss=0.2352 acc=0.9358
+  Epoch   8/50 | train loss=0.2157 acc=0.9140 | val loss=0.3670 acc=0.9262
+  Epoch   9/50 | train loss=0.2430 acc=0.9094 | val loss=0.2155 acc=0.9023
+  Epoch  10/50 | train loss=0.2133 acc=0.9183 | val loss=0.1863 acc=0.9148
+  Epoch  11/50 | train loss=0.2332 acc=0.9163 | val loss=0.2331 acc=0.8726
+  Epoch  12/50 | train loss=0.2052 acc=0.9231 | val loss=0.2313 acc=0.9339
+  Epoch  13/50 | train loss=0.1831 acc=0.9334 | val loss=0.2041 acc=0.9368
+  Epoch  14/50 | train loss=0.1715 acc=0.9391 | val loss=0.1944 acc=0.9454
+  Epoch  15/50 | train loss=0.1843 acc=0.9331 | val loss=0.1585 acc=0.9387
+  Epoch  16/50 | train loss=0.1748 acc=0.9398 | val loss=0.1630 acc=0.9425
+  Epoch  17/50 | train loss=0.1697 acc=0.9377 | val loss=0.2009 acc=0.8927
+  Epoch  18/50 | train loss=0.1510 acc=0.9475 | val loss=0.4261 acc=0.9330
+  Epoch  19/50 | train loss=0.1539 acc=0.9473 | val loss=0.1613 acc=0.9607
+  Epoch  20/50 | train loss=0.1534 acc=0.9557 | val loss=0.1438 acc=0.9358
+  Epoch  21/50 | train loss=0.1411 acc=0.9554 | val loss=0.1288 acc=0.9569
+  Epoch  22/50 | train loss=0.1323 acc=0.9557 | val loss=0.1245 acc=0.9377
+  Epoch  23/50 | train loss=0.1385 acc=0.9559 | val loss=0.1733 acc=0.9205
+  Epoch  24/50 | train loss=0.1159 acc=0.9612 | val loss=0.1298 acc=0.9559
+  Epoch  25/50 | train loss=0.1239 acc=0.9614 | val loss=0.1141 acc=0.9646
+  Epoch  26/50 | train loss=0.1310 acc=0.9571 | val loss=0.1081 acc=0.9579
+  Epoch  27/50 | train loss=0.1075 acc=0.9638 | val loss=0.1048 acc=0.9569
+  Epoch  28/50 | train loss=0.1091 acc=0.9655 | val loss=0.1096 acc=0.9569
+  Epoch  29/50 | train loss=0.1000 acc=0.9662 | val loss=0.2310 acc=0.9607
+  Epoch  30/50 | train loss=0.0973 acc=0.9686 | val loss=0.1432 acc=0.9598
+  Epoch  31/50 | train loss=0.1029 acc=0.9693 | val loss=0.1553 acc=0.9703
+  Epoch  32/50 | train loss=0.0966 acc=0.9739 | val loss=0.0976 acc=0.9684
+  Epoch  33/50 | train loss=0.0938 acc=0.9698 | val loss=0.1062 acc=0.9550
+  Epoch  34/50 | train loss=0.0828 acc=0.9705 | val loss=0.1772 acc=0.9655
+  Epoch  35/50 | train loss=0.0980 acc=0.9708 | val loss=0.1505 acc=0.9646
+  Epoch  36/50 | train loss=0.0777 acc=0.9739 | val loss=0.1287 acc=0.9617
+  Epoch  37/50 | train loss=0.0862 acc=0.9741 | val loss=0.1138 acc=0.9693
+  ⏹  Early stopping at epoch 37
+  Saved: V1-Baseline_curves.png
+  Saved: V1-Baseline_roc.png
+  Saved: V1-Baseline_f1_curve.png
+  Saved: V1-Baseline_confusion.png
+
+───────────────────────────────────────────────────────
+ Training: V2-RMSNorm  (258,626 params)
+───────────────────────────────────────────────────────
+  Epoch   1/50 | train loss=0.6823 acc=0.6021 | val loss=0.4035 acc=0.7998
+  Epoch   2/50 | train loss=0.3792 acc=0.8387 | val loss=0.2883 acc=0.8841
+  Epoch   3/50 | train loss=0.3012 acc=0.8766 | val loss=0.2178 acc=0.9023
+  Epoch   4/50 | train loss=0.2597 acc=0.8948 | val loss=0.2021 acc=0.9253
+  Epoch   5/50 | train loss=0.2358 acc=0.9048 | val loss=0.6737 acc=0.8793
+  Epoch   6/50 | train loss=0.2328 acc=0.9147 | val loss=0.2625 acc=0.9454
+  Epoch   7/50 | train loss=0.2156 acc=0.9214 | val loss=0.2668 acc=0.8649
+  Epoch   8/50 | train loss=0.2209 acc=0.9175 | val loss=0.2011 acc=0.9243
+  Epoch   9/50 | train loss=0.2174 acc=0.9197 | val loss=0.1890 acc=0.9425
+  Epoch  10/50 | train loss=0.1954 acc=0.9312 | val loss=0.1770 acc=0.9128
+  Epoch  11/50 | train loss=0.1904 acc=0.9346 | val loss=0.1650 acc=0.9282
+  Epoch  12/50 | train loss=0.1918 acc=0.9279 | val loss=0.2390 acc=0.8736
+  Epoch  13/50 | train loss=0.1687 acc=0.9396 | val loss=0.1803 acc=0.9464
+  Epoch  14/50 | train loss=0.1889 acc=0.9377 | val loss=0.1413 acc=0.9454
+  Epoch  15/50 | train loss=0.1503 acc=0.9497 | val loss=0.1455 acc=0.9406
+  Epoch  16/50 | train loss=0.1525 acc=0.9494 | val loss=0.1399 acc=0.9531
+  Epoch  17/50 | train loss=0.1513 acc=0.9475 | val loss=0.1462 acc=0.9473
+  Epoch  18/50 | train loss=0.1452 acc=0.9518 | val loss=0.1462 acc=0.9330
+  Epoch  19/50 | train loss=0.1448 acc=0.9499 | val loss=0.2976 acc=0.9339
+  Epoch  20/50 | train loss=0.1375 acc=0.9516 | val loss=0.1297 acc=0.9665
+  Epoch  21/50 | train loss=0.1327 acc=0.9557 | val loss=0.1235 acc=0.9531
+  Epoch  22/50 | train loss=0.1212 acc=0.9571 | val loss=0.1245 acc=0.9579
+  Epoch  23/50 | train loss=0.1213 acc=0.9571 | val loss=0.1305 acc=0.9607
+  Epoch  24/50 | train loss=0.1138 acc=0.9638 | val loss=0.1034 acc=0.9693
+  Epoch  25/50 | train loss=0.1156 acc=0.9640 | val loss=0.1229 acc=0.9674
+  Epoch  26/50 | train loss=0.1116 acc=0.9648 | val loss=0.1167 acc=0.9646
+  Epoch  27/50 | train loss=0.1174 acc=0.9621 | val loss=0.1392 acc=0.9693
+  Epoch  28/50 | train loss=0.1094 acc=0.9638 | val loss=0.1246 acc=0.9732
+  Epoch  29/50 | train loss=0.1018 acc=0.9657 | val loss=0.1560 acc=0.9665
+  ⏹  Early stopping at epoch 29
+  Saved: V2-RMSNorm_curves.png
+  Saved: V2-RMSNorm_roc.png
+  Saved: V2-RMSNorm_f1_curve.png
+  Saved: V2-RMSNorm_confusion.png
+
+───────────────────────────────────────────────────────
+ Training: V3-SwiGLU  (259,010 params)
+───────────────────────────────────────────────────────
+  Epoch   1/50 | train loss=0.6938 acc=0.5995 | val loss=0.4510 acc=0.7414
+  Epoch   2/50 | train loss=0.3800 acc=0.8358 | val loss=0.4149 acc=0.8985
+  Epoch   3/50 | train loss=0.3073 acc=0.8641 | val loss=0.2725 acc=0.9215
+  Epoch   4/50 | train loss=0.2702 acc=0.8890 | val loss=0.2309 acc=0.9186
+  Epoch   5/50 | train loss=0.2652 acc=0.8948 | val loss=0.2391 acc=0.9061
+  Epoch   6/50 | train loss=0.2401 acc=0.8984 | val loss=0.2342 acc=0.9148
+  Epoch   7/50 | train loss=0.2340 acc=0.9012 | val loss=0.3011 acc=0.8314
+  Epoch   8/50 | train loss=0.2495 acc=0.9032 | val loss=0.3018 acc=0.9243
+  Epoch   9/50 | train loss=0.2181 acc=0.9171 | val loss=0.2237 acc=0.8908
+  Epoch  10/50 | train loss=0.2205 acc=0.9099 | val loss=0.1854 acc=0.9234
+  Epoch  11/50 | train loss=0.1850 acc=0.9300 | val loss=0.1566 acc=0.9425
+  Epoch  12/50 | train loss=0.1757 acc=0.9326 | val loss=0.1877 acc=0.9377
+  Epoch  13/50 | train loss=0.1729 acc=0.9348 | val loss=0.1712 acc=0.9368
+  Epoch  14/50 | train loss=0.1833 acc=0.9377 | val loss=0.2525 acc=0.9454
+  Epoch  15/50 | train loss=0.1709 acc=0.9396 | val loss=0.1986 acc=0.9559
+  Epoch  16/50 | train loss=0.1482 acc=0.9468 | val loss=0.1571 acc=0.9435
+  ⏹  Early stopping at epoch 16
+  Saved: V3-SwiGLU_curves.png
+  Saved: V3-SwiGLU_roc.png
+  Saved: V3-SwiGLU_f1_curve.png
+  Saved: V3-SwiGLU_confusion.png
+
+───────────────────────────────────────────────────────
+ Training: V4-RMS+SwiGLU  (291,650 params)
+───────────────────────────────────────────────────────
+  Epoch   1/50 | train loss=0.6579 acc=0.6086 | val loss=0.4125 acc=0.8008
+  Epoch   2/50 | train loss=0.3525 acc=0.8528 | val loss=0.3618 acc=0.9176
+  Epoch   3/50 | train loss=0.2824 acc=0.8905 | val loss=0.2655 acc=0.8908
+  Epoch   4/50 | train loss=0.2394 acc=0.9075 | val loss=0.2815 acc=0.8381
+  Epoch   5/50 | train loss=0.2354 acc=0.9063 | val loss=0.2167 acc=0.9377
+  Epoch   6/50 | train loss=0.2322 acc=0.9084 | val loss=0.2898 acc=0.9330
+  Epoch   7/50 | train loss=0.2184 acc=0.9199 | val loss=0.2310 acc=0.9435
+  Epoch   8/50 | train loss=0.1807 acc=0.9384 | val loss=0.2888 acc=0.9349
+  Epoch   9/50 | train loss=0.1905 acc=0.9331 | val loss=0.2936 acc=0.8381
+  Epoch  10/50 | train loss=0.1615 acc=0.9446 | val loss=0.1392 acc=0.9511
+  Epoch  11/50 | train loss=0.1628 acc=0.9482 | val loss=0.3241 acc=0.9377
+  Epoch  12/50 | train loss=0.1728 acc=0.9439 | val loss=0.1525 acc=0.9559
+  Epoch  13/50 | train loss=0.1430 acc=0.9504 | val loss=0.1694 acc=0.9588
+  Epoch  14/50 | train loss=0.1402 acc=0.9561 | val loss=0.2109 acc=0.9588
+  Epoch  15/50 | train loss=0.1452 acc=0.9501 | val loss=0.1043 acc=0.9646
+  Epoch  16/50 | train loss=0.1412 acc=0.9545 | val loss=0.1696 acc=0.9617
+  Epoch  17/50 | train loss=0.1237 acc=0.9616 | val loss=0.1421 acc=0.9492
+  Epoch  18/50 | train loss=0.1226 acc=0.9571 | val loss=0.1555 acc=0.9665
+  Epoch  19/50 | train loss=0.1076 acc=0.9660 | val loss=0.1500 acc=0.9713
+  Epoch  20/50 | train loss=0.1140 acc=0.9640 | val loss=0.1183 acc=0.9521
+  ⏹  Early stopping at epoch 20
+  Saved: V4-RMS+SwiGLU_curves.png
+  Saved: V4-RMS+SwiGLU_roc.png
+  Saved: V4-RMS+SwiGLU_f1_curve.png
+  Saved: V4-RMS+SwiGLU_confusion.png
+
+───────────────────────────────────────────────────────
+ Training: V5-Proposed  (456,898 params)
+───────────────────────────────────────────────────────
+  Epoch   1/50 | train loss=0.6425 acc=0.6160 | val loss=0.3728 acc=0.8228
+  Epoch   2/50 | train loss=0.4085 acc=0.8188 | val loss=0.3084 acc=0.8831
+  Epoch   3/50 | train loss=0.2967 acc=0.8667 | val loss=0.2700 acc=0.8946
+  Epoch   4/50 | train loss=0.2968 acc=0.8811 | val loss=0.2563 acc=0.8736
+  Epoch   5/50 | train loss=0.2537 acc=0.9048 | val loss=0.2522 acc=0.9339
+  Epoch   6/50 | train loss=0.2380 acc=0.9116 | val loss=0.2863 acc=0.8458
+  Epoch   7/50 | train loss=0.2390 acc=0.9058 | val loss=0.2190 acc=0.9330
+  Epoch   8/50 | train loss=0.2211 acc=0.9173 | val loss=0.1639 acc=0.9310
+  Epoch   9/50 | train loss=0.1864 acc=0.9283 | val loss=0.1724 acc=0.9406
+  Epoch  10/50 | train loss=0.1927 acc=0.9274 | val loss=0.1762 acc=0.9128
+  Epoch  11/50 | train loss=0.1859 acc=0.9386 | val loss=0.2141 acc=0.8956
+  Epoch  12/50 | train loss=0.1774 acc=0.9377 | val loss=0.1575 acc=0.9406
+  Epoch  13/50 | train loss=0.1617 acc=0.9497 | val loss=0.1959 acc=0.9234
+  Epoch  14/50 | train loss=0.1574 acc=0.9453 | val loss=0.1671 acc=0.9579
+  Epoch  15/50 | train loss=0.1477 acc=0.9499 | val loss=0.1576 acc=0.9253
+  Epoch  16/50 | train loss=0.1430 acc=0.9504 | val loss=0.1360 acc=0.9579
+  Epoch  17/50 | train loss=0.1309 acc=0.9540 | val loss=0.1235 acc=0.9416
+  Epoch  18/50 | train loss=0.1275 acc=0.9576 | val loss=0.1261 acc=0.9540
+  Epoch  19/50 | train loss=0.1182 acc=0.9624 | val loss=0.1880 acc=0.9626
+  Epoch  20/50 | train loss=0.1243 acc=0.9583 | val loss=0.0955 acc=0.9607
+  Epoch  21/50 | train loss=0.1126 acc=0.9633 | val loss=0.1444 acc=0.9511
+  Epoch  22/50 | train loss=0.1115 acc=0.9628 | val loss=0.1501 acc=0.9607
+  Epoch  23/50 | train loss=0.1089 acc=0.9626 | val loss=0.1545 acc=0.9579
+  Epoch  24/50 | train loss=0.1113 acc=0.9657 | val loss=0.1129 acc=0.9579
+  Epoch  25/50 | train loss=0.1166 acc=0.9626 | val loss=0.1089 acc=0.9617
+  ⏹  Early stopping at epoch 25
+  Saved: V5-Proposed_curves.png
+  Saved: V5-Proposed_roc.png
+  Saved: V5-Proposed_f1_curve.png
+  Saved: V5-Proposed_confusion.png
+  Saved: ablation_comparison.png
+
+Ablation Summary:
+Variant                  Acc    Prec     Rec      F1     AUC    Ep
+────────────────────────────────────────────────────────────
+V1-Baseline           0.8221  0.8600  0.7714  0.7891  0.9245    37
+V2-RMSNorm            0.8109  0.8526  0.7564  0.7733  0.9224    29
+V3-SwiGLU             0.8429  0.8625  0.8043  0.8202  0.9270    16
+V4-RMS+SwiGLU         0.8381  0.8707  0.7927  0.8109  0.9354    20
+V5-Proposed           0.8478  0.8751  0.8064  0.8241  0.9287    25
+
+═══════════════════════════════════════════════════════
+ FINAL EVALUATION — V5-Proposed
+═══════════════════════════════════════════════════════
+
+───────────────────────────────────────────────────────
+ Training: Final-ViT-XR  (456,898 params)
+───────────────────────────────────────────────────────
+  Epoch   1/50 | train loss=0.6993 acc=0.5674 | val loss=0.5118 acc=0.6839
+  Epoch   2/50 | train loss=0.4358 acc=0.7931 | val loss=0.3391 acc=0.8333
+  Epoch   3/50 | train loss=0.3118 acc=0.8732 | val loss=0.3065 acc=0.9109
+  Epoch   4/50 | train loss=0.2793 acc=0.8871 | val loss=0.2549 acc=0.9243
+  Epoch   5/50 | train loss=0.2611 acc=0.9051 | val loss=0.2814 acc=0.9368
+  Epoch   6/50 | train loss=0.2629 acc=0.9022 | val loss=0.2178 acc=0.9013
+  Epoch   7/50 | train loss=0.2271 acc=0.9132 | val loss=0.2455 acc=0.9234
+  Epoch   8/50 | train loss=0.2388 acc=0.9104 | val loss=0.2020 acc=0.9004
+  Epoch   9/50 | train loss=0.2228 acc=0.9132 | val loss=0.2259 acc=0.9397
+  Epoch  10/50 | train loss=0.2282 acc=0.9204 | val loss=0.4242 acc=0.9119
+  Epoch  11/50 | train loss=0.2105 acc=0.9219 | val loss=0.2277 acc=0.9406
+  Epoch  12/50 | train loss=0.2074 acc=0.9259 | val loss=0.2049 acc=0.9473
+  Epoch  13/50 | train loss=0.1933 acc=0.9243 | val loss=0.3423 acc=0.9234
+  ⏹  Early stopping at epoch 13
+  Saved: Final-ViT-XR_curves.png
+
+--- Test Set Classification Report ---
+              precision    recall  f1-score   support
+
+      Normal     0.8000    0.7521    0.7753       234
+   Pneumonia     0.8564    0.8872    0.8715       390
+
+    accuracy                         0.8365       624
+   macro avg     0.8282    0.8197    0.8234       624
+weighted avg     0.8353    0.8365    0.8355       624
+
+  ROC-AUC : 0.9130
+  Stopped : epoch 13
+  Saved: Final-ViT-XR_roc.png
+  Saved: Final-ViT-XR_f1_curve.png
+  Saved: Final-ViT-XR_confusion.png
+
+Final Results: {
+  "accuracy": 0.8365384615384616,
+  "precision": 0.8282178217821783,
+  "recall": 0.8196581196581196,
+  "f1": 0.823433460202621,
+  "roc_auc": 0.9130177514792901,
+  "stopped_epoch": 13,
+  "total_params": 456898
+}
+
+All plots saved as PNG files in the current directory.

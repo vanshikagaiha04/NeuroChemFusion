@@ -1,0 +1,3 @@
+*.npy
+tox21_dmpnn/tox21-featurized/
+lipo_dmpnn/lipo-featurized/

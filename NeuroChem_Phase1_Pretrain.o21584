@@ -1,0 +1,95 @@
+
+mgmt01: 
+                                                            Req'd  Req'd   Elap
+Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
+--------------- -------- -------- ---------- ------ --- --- ------ ----- - -----
+14170.mgmt01    llmapi   gpu      ollama_se* 22507*   1  64   80gb   --  R 1407: gpu01/3*64
+14197.mgmt01    llmapi   gpu      ollama_se* 17045*   1   1    --    --  R 1269: gpu02/0
+16504.mgmt01    konal.1* workq    no_comput* 10749*   1   1    --  9999: R 838:5 gpu01/5
+18173.mgmt01    llmapi   workq    vllm-qwop* 18704*   1  32  128gb   --  R 605:4 gpu02/3*32
+18275.mgmt01    aryan.1* workq    evalmate   12260*   1   1    --    --  R 596:0 gpu01/7
+18564.mgmt01    tarun.v* workq    g2_mo      32110*   1   1    --  1000: R 527:2 gpu02/1
+18606.mgmt01    tarun.v* gpu      g1_mo      27969*   1   1    --  1000: R 524:4 gpu01/2
+20123.mgmt01    rohites* gpu      test       20946*   1  10   10gb   --  R 232:1 gpu02/2*10
+21049.mgmt01    sanoj.k* gpu      modeldct1* 24111*   1  10   32gb   --  R 92:19 gpu02/8*10
+21427.mgmt01    samir.1* gpu      MDSR       37585*   1   8   80gb   --  R 28:44 gpu01/0*8
+21502.mgmt01    mayank.* gpu      Efficient*    --    1   4    --    --  H   --   -- 
+21503.mgmt01    mayank.* gpu      Efficient*    --    1   4    --    --  H   --   -- 
+21504.mgmt01    mayank.* gpu      Efficient*    --    1   4    --    --  H   --   -- 
+21505.mgmt01    mayank.* gpu      Inception*    --    1   4    --    --  H   --   -- 
+21542.mgmt01    pranit.* gpu      pcen_ince* 17744*   1   8    --    --  R 14:52 gpu02/7*8
+21550.mgmt01    aantrik* gpu      gaitAnaly* 18282*   1  10  128gb   --  R 14:13 gpu02/6*10
+21559.mgmt01    sulabh.* gpu      PVR_LAB       --    1   5    --    --  H   --   -- 
+21565.mgmt01    parnika* gpu      watermark* 10779*   1   8    --  12:00 R 02:06 gpu01/1*8
+21566.mgmt01    dev.123* workq    STDIN      11412*   1   4    --    --  R 01:12 gpu01/4*4
+21575.mgmt01    rohites* gpu      app1       12005*   1  10   32gb   --  R 00:32 gpu01/8*10
+21581.mgmt01    richa.k* workq    FB_TRAIN   14128*   1  32   64gb 06:00 R 00:09 gpu02/4*32
+21583.mgmt01    krish.1* gpu      mirage_ev* 12151*   1   1    --  05:00 R 00:00 gpu01/6
+21584.mgmt01    kamaksh* gpu      NeuroChem*    --    1   4    --  04:00 R   --  gpu01/9*4
+==========================================================
+LAUNCHING PHASE 1: BACKBONE PRE-TRAINING (ESOL + LIPO)
+START TIME: Sat May  2 02:07:38 PM IST 2026
+NODE: gpu01
+GPU INFO: NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+==========================================================
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+No normalization for NumAmideBonds. Feature removed!
+No normalization for NumAtomStereoCenters. Feature removed!
+No normalization for NumBridgeheadAtoms. Feature removed!
+No normalization for NumHeterocycles. Feature removed!
+No normalization for NumSpiroAtoms. Feature removed!
+No normalization for NumUnspecifiedAtomStereoCenters. Feature removed!
+No normalization for Phi. Feature removed!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777711112.282372 1215465 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1777711119.036049 1215465 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777711130.169323 1215465 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py:588: calling function (from tensorflow.python.eager.polymorphic_function.polymorphic_function) with experimental_relax_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+experimental_relax_shapes is deprecated, use reduce_retracing instead
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_scatter/_scatter_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-spline-conv'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_spline_conv/_basis_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_sparse/_spmm_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'lightning'
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:164: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, xz, conv1d_weight, conv1d_bias, x_proj_weight, delta_proj_weight,
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:240: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:986: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:1045: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:26: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, x, weight, bias, process_group=None, sequence_parallel=True):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:62: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:758: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, zxbcdt, conv1d_weight, conv1d_bias, dt_bias, A, D, chunk_size, initial_states=None, seq_idx=None, dt_limit=(0.0, float("inf")), return_final_states=False, activation="silu",
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:836: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+>>> Preparing ESOL & Lipo for Pre-training...
+>>> Starting Phase 1: Backbone Pre-training...
+Epoch 0 | Knowledge Distillation in Progress...
+Epoch 10 | Knowledge Distillation in Progress...
+Epoch 20 | Knowledge Distillation in Progress...
+Epoch 30 | Knowledge Distillation in Progress...
+Epoch 40 | Knowledge Distillation in Progress...
+>>> Backbone Weights Saved. Ready for BBBP/Tox21 Transfer Phase.
+==========================================================
+PHASE 1 FINISHED AT: Sat May  2 02:09:59 PM IST 2026
+BACKBONE WEIGHTS SHOULD BE SAVED IN: neurochem_backbone_weights.pt
+==========================================================

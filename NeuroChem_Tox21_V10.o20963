@@ -1,0 +1,151 @@
+==========================================================
+LAUNCHING TOX21 MULTI-TASK TRI-MODAL FUSION (V10)
+START TIME: Tue Apr 28 12:50:38 PM IST 2026
+NODE: gpu01
+GPU INFO: NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+NVIDIA H100 80GB HBM3
+==========================================================
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+No normalization for NumAmideBonds. Feature removed!
+No normalization for NumAtomStereoCenters. Feature removed!
+No normalization for NumBridgeheadAtoms. Feature removed!
+No normalization for NumHeterocycles. Feature removed!
+No normalization for NumSpiroAtoms. Feature removed!
+No normalization for NumUnspecifiedAtomStereoCenters. Feature removed!
+No normalization for Phi. Feature removed!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777360841.822038 2095480 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1777360841.863813 2095480 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777360843.436459 2095480 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py:588: calling function (from tensorflow.python.eager.polymorphic_function.polymorphic_function) with experimental_relax_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+experimental_relax_shapes is deprecated, use reduce_retracing instead
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_scatter/_scatter_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-spline-conv'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_spline_conv/_basis_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_sparse/_spmm_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'lightning'
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:164: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, xz, conv1d_weight, conv1d_bias, x_proj_weight, delta_proj_weight,
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:240: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:986: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:1045: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:26: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, x, weight, bias, process_group=None, sequence_parallel=True):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:62: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:758: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, zxbcdt, conv1d_weight, conv1d_bias, dt_bias, A, D, chunk_size, initial_states=None, seq_idx=None, dt_limit=(0.0, float("inf")), return_final_states=False, activation="silu",
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:836: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+>>> Loading Tox21 Data (V12)...
+[12:50:46] WARNING: not removing hydrogen atom without neighbors
+[12:50:46] WARNING: not removing hydrogen atom without neighbors
+[12:50:52] Explicit valence for atom # 8 Al, 6, is greater than permitted
+Failed to featurize datapoint 1322, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[12:50:57] Explicit valence for atom # 3 Al, 6, is greater than permitted
+Failed to featurize datapoint 2290, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[12:50:57] Explicit valence for atom # 4 Al, 6, is greater than permitted
+Failed to featurize datapoint 2297, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[12:51:03] Explicit valence for atom # 4 Al, 6, is greater than permitted
+Failed to featurize datapoint 3558, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[12:51:07] Explicit valence for atom # 9 Al, 6, is greater than permitted
+Failed to featurize datapoint 4565, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[12:51:08] Explicit valence for atom # 5 Al, 6, is greater than permitted
+Failed to featurize datapoint 4649, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[12:51:12] Explicit valence for atom # 16 Al, 6, is greater than permitted
+Failed to featurize datapoint 5538, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+[12:51:18] Explicit valence for atom # 20 Al, 6, is greater than permitted
+Failed to featurize datapoint 6723, None. Appending empty array
+Exception message: Python argument types in
+    rdkit.Chem.rdmolfiles.CanonicalRankAtoms(NoneType)
+did not match C++ signature:
+    CanonicalRankAtoms(RDKit::ROMol mol, bool breakTies=True, bool includeChirality=True, bool includeIsotopes=True, bool includeAtomMaps=True, bool includeChiralPresence=False)
+Exception message: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (7831,) + inhomogeneous part.
+[12:51:24] WARNING: not removing hydrogen atom without neighbors
+
+>>> Training V12 (F1-Killer Mode)...
+Epoch 020 | Loss: 1.6590 | Val AUC: 0.5296
+Epoch 040 | Loss: 1.6184 | Val AUC: 0.5332
+Epoch 060 | Loss: 1.5647 | Val AUC: 0.5348
+Epoch 080 | Loss: 1.4951 | Val AUC: 0.5479
+Epoch 100 | Loss: 1.4194 | Val AUC: 0.5762
+Epoch 120 | Loss: 1.3632 | Val AUC: 0.6245
+Epoch 140 | Loss: 1.3296 | Val AUC: 0.6548
+Epoch 160 | Loss: 1.3041 | Val AUC: 0.6746
+Epoch 180 | Loss: 1.2695 | Val AUC: 0.6844
+Epoch 200 | Loss: 1.2501 | Val AUC: 0.6936
+Epoch 220 | Loss: 1.2336 | Val AUC: 0.7011
+Epoch 240 | Loss: 1.2077 | Val AUC: 0.7098
+Epoch 260 | Loss: 1.1825 | Val AUC: 0.7190
+Epoch 280 | Loss: 1.1647 | Val AUC: 0.7255
+Epoch 300 | Loss: 1.1494 | Val AUC: 0.7317
+
+>>> Running Final Detailed Evaluation...
+-----------------------------------------------------------------
+Task Name            | ROC-AUC  | PRC-AUC  | F1-Score
+-----------------------------------------------------------------
+NR-AR                | 0.7626   | 0.3362   | 0.0686
+NR-AR-LBD            | 0.7829   | 0.2961   | 0.0523
+NR-AhR               | 0.7999   | 0.3289   | 0.2318
+NR-Aromatase         | 0.6796   | 0.1173   | 0.1198
+NR-ER                | 0.6806   | 0.2029   | 0.1641
+NR-ER-LBD            | 0.6735   | 0.1673   | 0.0563
+NR-PPAR-gamma        | 0.7123   | 0.0621   | 0.0599
+SR-ARE               | 0.6204   | 0.2472   | 0.2620
+SR-ATAD5             | 0.6906   | 0.1497   | 0.0937
+SR-HSE               | 0.7201   | 0.1918   | 0.1219
+SR-MMP               | 0.7564   | 0.3396   | 0.2322
+SR-p53               | 0.6835   | 0.2491   | 0.1800
+-----------------------------------------------------------------
+MEAN TEST ROC-AUC: 0.7135
+-----------------------------------------------------------------
+
+>>> Generating Tox21 Multi-Task Visuals...
+>>> Final Report saved as 'tox21_neurochem_report.png'!
+==========================================================
+JOB FINISHED AT: Tue Apr 28 12:52:53 PM IST 2026
+==========================================================

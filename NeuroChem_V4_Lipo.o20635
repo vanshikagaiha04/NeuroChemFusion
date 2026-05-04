@@ -1,0 +1,63 @@
+Starting NeuroChem Fusion V4 Optimized Run on H100...
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+No normalization for NumAmideBonds. Feature removed!
+No normalization for NumAtomStereoCenters. Feature removed!
+No normalization for NumBridgeheadAtoms. Feature removed!
+No normalization for NumHeterocycles. Feature removed!
+No normalization for NumSpiroAtoms. Feature removed!
+No normalization for NumUnspecifiedAtomStereoCenters. Feature removed!
+No normalization for Phi. Feature removed!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777183546.182395 1053599 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1777183553.125831 1053599 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777183569.914684 1053599 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py:588: calling function (from tensorflow.python.eager.polymorphic_function.polymorphic_function) with experimental_relax_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+experimental_relax_shapes is deprecated, use reduce_retracing instead
+Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'lightning'
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+Loading ESOL Dataset with Enhanced MolGraphConvFeaturizer...
+Initializing Tuned GCNModel on CUDA...
+Checking GPU: NVIDIA H100 80GB HBM3
+Starting training on H100 GPU with Validation Checkpoint...
+Step 50 validation: pearson_r2_score=0.653237
+Step 100 validation: pearson_r2_score=0.656334
+Step 150 validation: pearson_r2_score=0.701535
+Step 200 validation: pearson_r2_score=0.737723
+Step 250 validation: pearson_r2_score=0.74902
+Step 300 validation: pearson_r2_score=0.704643
+Step 350 validation: pearson_r2_score=0.739215
+Step 400 validation: pearson_r2_score=0.787919
+Step 450 validation: pearson_r2_score=0.761559
+Step 500 validation: pearson_r2_score=0.779694
+Step 550 validation: pearson_r2_score=0.770979
+Step 600 validation: pearson_r2_score=0.783433
+Step 650 validation: pearson_r2_score=0.794846
+Step 700 validation: pearson_r2_score=0.794077
+Step 750 validation: pearson_r2_score=0.796539
+Step 800 validation: pearson_r2_score=0.793282
+Step 850 validation: pearson_r2_score=0.793102
+Step 900 validation: pearson_r2_score=0.806028
+Step 950 validation: pearson_r2_score=0.792966
+Step 1000 validation: pearson_r2_score=0.791183
+Step 1050 validation: pearson_r2_score=0.791683
+Step 1100 validation: pearson_r2_score=0.803893
+Step 1150 validation: pearson_r2_score=0.799546
+Step 1200 validation: pearson_r2_score=0.805497
+Step 1250 validation: pearson_r2_score=0.790559
+Step 1300 validation: pearson_r2_score=0.797964
+Step 1350 validation: pearson_r2_score=0.802333
+Step 1400 validation: pearson_r2_score=0.802127
+Step 1450 validation: pearson_r2_score=0.795825
+Step 1500 validation: pearson_r2_score=0.79785
+Restoring best model weights and evaluating performance...
+
+===================================
+TRAINING & EVALUATION SUCCESSFUL!
+Train Pearson R2: 0.9775
+Valid Pearson R2: 0.7979
+Test Pearson R2:  0.8323
+===================================

@@ -1,0 +1,111 @@
+Starting NeuroChem Fusion V16 (SOTA Cross-Modal) Run on H100...
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+No normalization for NumAmideBonds. Feature removed!
+No normalization for NumAtomStereoCenters. Feature removed!
+No normalization for NumBridgeheadAtoms. Feature removed!
+No normalization for NumHeterocycles. Feature removed!
+No normalization for NumSpiroAtoms. Feature removed!
+No normalization for NumUnspecifiedAtomStereoCenters. Feature removed!
+No normalization for Phi. Feature removed!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776761368.172010 2261209 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1776761368.231790 2261209 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776761372.407145 2261209 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py:588: calling function (from tensorflow.python.eager.polymorphic_function.polymorphic_function) with experimental_relax_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+experimental_relax_shapes is deprecated, use reduce_retracing instead
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_scatter/_scatter_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-spline-conv'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_spline_conv/_basis_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_sparse/_spmm_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'lightning'
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:164: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, xz, conv1d_weight, conv1d_bias, x_proj_weight, delta_proj_weight,
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:240: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:986: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:1045: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:26: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, x, weight, bias, process_group=None, sequence_parallel=True):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:62: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:758: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, zxbcdt, conv1d_weight, conv1d_bias, dt_bias, A, D, chunk_size, initial_states=None, seq_idx=None, dt_limit=(0.0, float("inf")), return_final_states=False, activation="silu",
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:836: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+
+>>> Starting V16 Training (With Metric Tracking & Graph Generation)...
+Epoch 002 | Loss: 0.5069 | Val R²: 0.4693
+Epoch 004 | Loss: 0.4445 | Val R²: 0.5015
+Epoch 006 | Loss: 0.4099 | Val R²: 0.5410
+Epoch 008 | Loss: 0.3936 | Val R²: 0.5466
+Epoch 010 | Loss: 0.3582 | Val R²: 0.5587
+Epoch 012 | Loss: 0.3790 | Val R²: 0.5607
+Epoch 014 | Loss: 0.3488 | Val R²: 0.5728
+Epoch 016 | Loss: 0.3466 | Val R²: 0.5821
+Epoch 018 | Loss: 0.3500 | Val R²: 0.5919
+Epoch 020 | Loss: 0.3516 | Val R²: 0.5855
+Epoch 022 | Loss: 0.3421 | Val R²: 0.5766
+Epoch 024 | Loss: 0.3160 | Val R²: 0.5909
+Epoch 026 | Loss: 0.3018 | Val R²: 0.5880
+Epoch 028 | Loss: 0.3109 | Val R²: 0.5885
+Epoch 030 | Loss: 0.3078 | Val R²: 0.5898
+Epoch 032 | Loss: 0.2999 | Val R²: 0.5655
+Epoch 034 | Loss: 0.2855 | Val R²: 0.5690
+Epoch 036 | Loss: 0.2658 | Val R²: 0.5794
+Epoch 038 | Loss: 0.2927 | Val R²: 0.5912
+Epoch 040 | Loss: 0.2635 | Val R²: 0.5859
+Epoch 042 | Loss: 0.2856 | Val R²: 0.5964
+Epoch 044 | Loss: 0.2736 | Val R²: 0.5959
+Epoch 046 | Loss: 0.2744 | Val R²: 0.5979
+Epoch 048 | Loss: 0.2723 | Val R²: 0.5996
+Epoch 050 | Loss: 0.2921 | Val R²: 0.5967
+Epoch 052 | Loss: 0.2584 | Val R²: 0.6023 (SWA)
+Epoch 054 | Loss: 0.2761 | Val R²: 0.5998 (SWA)
+Epoch 056 | Loss: 0.2463 | Val R²: 0.6009 (SWA)
+Epoch 058 | Loss: 0.2547 | Val R²: 0.6008 (SWA)
+Epoch 060 | Loss: 0.2520 | Val R²: 0.6016 (SWA)
+Epoch 062 | Loss: 0.2706 | Val R²: 0.6022 (SWA)
+Epoch 064 | Loss: 0.2589 | Val R²: 0.6023 (SWA)
+Epoch 066 | Loss: 0.2390 | Val R²: 0.6028 (SWA)
+Epoch 068 | Loss: 0.2843 | Val R²: 0.6028 (SWA)
+Epoch 070 | Loss: 0.2424 | Val R²: 0.6030 (SWA)
+Epoch 072 | Loss: 0.2432 | Val R²: 0.6028 (SWA)
+Epoch 074 | Loss: 0.2587 | Val R²: 0.6033 (SWA)
+Epoch 076 | Loss: 0.2480 | Val R²: 0.6038 (SWA)
+Epoch 078 | Loss: 0.2573 | Val R²: 0.6039 (SWA)
+Epoch 080 | Loss: 0.2315 | Val R²: 0.6038 (SWA)
+Epoch 082 | Loss: 0.2320 | Val R²: 0.6038 (SWA)
+Epoch 084 | Loss: 0.2567 | Val R²: 0.6035 (SWA)
+Epoch 086 | Loss: 0.2555 | Val R²: 0.6033 (SWA)
+Epoch 088 | Loss: 0.2563 | Val R²: 0.6031 (SWA)
+Epoch 090 | Loss: 0.2244 | Val R²: 0.6028 (SWA)
+Epoch 092 | Loss: 0.2192 | Val R²: 0.6029 (SWA)
+Epoch 094 | Loss: 0.2328 | Val R²: 0.6025 (SWA)
+Epoch 096 | Loss: 0.2391 | Val R²: 0.6026 (SWA)
+Epoch 098 | Loss: 0.2265 | Val R²: 0.6024 (SWA)
+Epoch 100 | Loss: 0.2429 | Val R²: 0.6022 (SWA)
+Epoch 102 | Loss: 0.2388 | Val R²: 0.6021 (SWA)
+Epoch 104 | Loss: 0.2130 | Val R²: 0.6021 (SWA)
+Epoch 106 | Loss: 0.2323 | Val R²: 0.6022 (SWA)
+Epoch 108 | Loss: 0.2194 | Val R²: 0.6024 (SWA)
+
+[!] Early Stopping triggered at Epoch 108 (Peak R² was 0.6039)
+
+>>> Loading Best Model for Testing...
+Traceback (most recent call last):
+  File "/home/kamakshi.rautela/NeuroChem_Minor/neurochem_fusion_v16.py", line 350, in <module>
+    model.load_state_dict(state_dict)
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch/nn/modules/module.py", line 2215, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for NeuroChemFusionV16:
+	Missing key(s) in state_dict: "embedding.weight", "mamba_branch.layers.0.A_log", "mamba_branch.layers.0.D", "mamba_branch.layers.0.in_proj.weight", "mamba_branch.layers.0.conv1d.weight", "mamba_branch.layers.0.conv1d.bias", "mamba_branch.layers.0.x_proj.weight", "mamba_branch.layers.0.dt_proj.weight", "mamba_branch.layers.0.dt_proj.bias", "mamba_branch.layers.0.out_proj.weight", "mamba_branch.layers.1.A_log", "mamba_branch.layers.1.D", "mamba_branch.layers.1.in_proj.weight", "mamba_branch.layers.1.conv1d.weight", "mamba_branch.layers.1.conv1d.bias", "mamba_branch.layers.1.x_proj.weight", "mamba_branch.layers.1.dt_proj.weight", "mamba_branch.layers.1.dt_proj.bias", "mamba_branch.layers.1.out_proj.weight", "mamba_branch.norms.0.weight", "mamba_branch.norms.0.bias", "mamba_branch.norms.1.weight", "mamba_branch.norms.1.bias", "phys_branch.0.weight", "phys_branch.0.bias", "phys_branch.1.weight", "phys_branch.1.bias", "phys_branch.4.weight", "phys_branch.4.bias", "phys_branch.5.weight", "phys_branch.5.bias", "graph_branch.node_proj.weight", "graph_branch.node_proj.bias", "graph_branch.mp1.weight", "graph_branch.mp1.bias", "graph_branch.norm1.weight", "graph_branch.norm1.bias", "graph_branch.mp2.weight", "graph_branch.mp2.bias", "graph_branch.norm2.weight", "graph_branch.norm2.bias", "graph_branch.attn.0.weight", "graph_branch.attn.0.bias", "graph_branch.attn.2.weight", "graph_branch.attn.2.bias", "graph_branch.out_proj.0.weight", "graph_branch.out_proj.0.bias", "fusion_gate.gate.0.weight", "fusion_gate.gate.0.bias", "fusion_gate.gate.2.weight", "fusion_gate.gate.2.bias", "fusion_gate.residual_proj.weight", "fusion_gate.residual_proj.bias", "fusion_gate.norm.weight", "fusion_gate.norm.bias", "regressor.0.weight", "regressor.0.bias", "regressor.1.weight", "regressor.1.bias", "regressor.4.weight", "regressor.4.bias". 
+	Unexpected key(s) in state_dict: "n_averaged", "module.embedding.weight", "module.mamba_branch.layers.0.A_log", "module.mamba_branch.layers.0.D", "module.mamba_branch.layers.0.in_proj.weight", "module.mamba_branch.layers.0.conv1d.weight", "module.mamba_branch.layers.0.conv1d.bias", "module.mamba_branch.layers.0.x_proj.weight", "module.mamba_branch.layers.0.dt_proj.weight", "module.mamba_branch.layers.0.dt_proj.bias", "module.mamba_branch.layers.0.out_proj.weight", "module.mamba_branch.layers.1.A_log", "module.mamba_branch.layers.1.D", "module.mamba_branch.layers.1.in_proj.weight", "module.mamba_branch.layers.1.conv1d.weight", "module.mamba_branch.layers.1.conv1d.bias", "module.mamba_branch.layers.1.x_proj.weight", "module.mamba_branch.layers.1.dt_proj.weight", "module.mamba_branch.layers.1.dt_proj.bias", "module.mamba_branch.layers.1.out_proj.weight", "module.mamba_branch.norms.0.weight", "module.mamba_branch.norms.0.bias", "module.mamba_branch.norms.1.weight", "module.mamba_branch.norms.1.bias", "module.phys_branch.0.weight", "module.phys_branch.0.bias", "module.phys_branch.1.weight", "module.phys_branch.1.bias", "module.phys_branch.4.weight", "module.phys_branch.4.bias", "module.phys_branch.5.weight", "module.phys_branch.5.bias", "module.graph_branch.node_proj.weight", "module.graph_branch.node_proj.bias", "module.graph_branch.mp1.weight", "module.graph_branch.mp1.bias", "module.graph_branch.norm1.weight", "module.graph_branch.norm1.bias", "module.graph_branch.mp2.weight", "module.graph_branch.mp2.bias", "module.graph_branch.norm2.weight", "module.graph_branch.norm2.bias", "module.graph_branch.attn.0.weight", "module.graph_branch.attn.0.bias", "module.graph_branch.attn.2.weight", "module.graph_branch.attn.2.bias", "module.graph_branch.out_proj.0.weight", "module.graph_branch.out_proj.0.bias", "module.fusion_gate.gate.0.weight", "module.fusion_gate.gate.0.bias", "module.fusion_gate.gate.2.weight", "module.fusion_gate.gate.2.bias", "module.fusion_gate.residual_proj.weight", "module.fusion_gate.residual_proj.bias", "module.fusion_gate.norm.weight", "module.fusion_gate.norm.bias", "module.regressor.0.weight", "module.regressor.0.bias", "module.regressor.1.weight", "module.regressor.1.bias", "module.regressor.4.weight", "module.regressor.4.bias". 

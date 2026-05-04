@@ -1,0 +1,5 @@
+Starting ViT ChestXray training...
+Traceback (most recent call last):
+  File "/home/kamakshi.rautela/NeuroChem_Minor/PVR/train_vit_xray.py", line 14, in <module>
+    import seaborn as sns
+ModuleNotFoundError: No module named 'seaborn'

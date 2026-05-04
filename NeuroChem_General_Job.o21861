@@ -1,0 +1,11 @@
+==========================================================
+STARTING JOB: predict.py
+TIME: Mon May  4 10:47:11 AM IST 2026
+==========================================================
+  File "/home/kamakshi.rautela/NeuroChem_Minor/predict.py", line 183
+    print("❌ Invalid SMILES.") return
+                                 ^^^^^^
+SyntaxError: invalid syntax
+==========================================================
+JOB FINISHED AT: Mon May  4 10:47:12 AM IST 2026
+==========================================================

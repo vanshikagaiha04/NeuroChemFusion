@@ -1,0 +1,106 @@
+==========================================================
+STARTING JOB: step1_pretrain.py
+TIME: Sun May  3 10:03:39 PM IST 2026
+==========================================================
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+No normalization for NumAmideBonds. Feature removed!
+No normalization for NumAtomStereoCenters. Feature removed!
+No normalization for NumBridgeheadAtoms. Feature removed!
+No normalization for NumHeterocycles. Feature removed!
+No normalization for NumSpiroAtoms. Feature removed!
+No normalization for NumUnspecifiedAtomStereoCenters. Feature removed!
+No normalization for Phi. Feature removed!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777826085.498821 1616255 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1777826092.961671 1616255 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777826107.505288 1616255 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py:588: calling function (from tensorflow.python.eager.polymorphic_function.polymorphic_function) with experimental_relax_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+experimental_relax_shapes is deprecated, use reduce_retracing instead
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_scatter/_scatter_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-spline-conv'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_spline_conv/_basis_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/torch_sparse/_spmm_cuda.so: undefined symbol: _ZN2at23SavedTensorDefaultHooks11set_tracingEb
+  import torch_geometric.typing
+Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'lightning'
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:164: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, xz, conv1d_weight, conv1d_bias, x_proj_weight, delta_proj_weight,
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:240: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:986: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:1045: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:26: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, x, weight, bias, process_group=None, sequence_parallel=True):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:62: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:758: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, zxbcdt, conv1d_weight, conv1d_bias, dt_bias, A, D, chunk_size, initial_states=None, seq_idx=None, dt_limit=(0.0, float("inf")), return_final_states=False, activation="silu",
+/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:836: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+
+==================================================
+>>> STAGE: Pre-training on ESOL
+==================================================
+Traceback (most recent call last):
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/urllib/request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/http/client.py", line 1303, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/http/client.py", line 1349, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/http/client.py", line 1298, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/http/client.py", line 1058, in _send_output
+    self.send(msg)
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/http/client.py", line 996, in send
+    self.connect()
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/http/client.py", line 1468, in connect
+    super().connect()
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/http/client.py", line 962, in connect
+    self.sock = self._create_connection(
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/socket.py", line 857, in create_connection
+    raise err
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/socket.py", line 845, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kamakshi.rautela/NeuroChem_Minor/step1_pretrain.py", line 182, in <module>
+    train_pretraining_task('esol', wrapper, epochs=30, lr=5e-4)
+  File "/home/kamakshi.rautela/NeuroChem_Minor/step1_pretrain.py", line 149, in train_pretraining_task
+    if task_name == 'esol': _, ds, _ = dc.molnet.load_delaney(featurizer=f_desc, reload=False)
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/deepchem/molnet/load_function/delaney_datasets.py", line 82, in load_delaney
+    return loader.load_dataset('delaney', reload)
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/deepchem/molnet/load_function/molnet_loader.py", line 179, in load_dataset
+    dataset = self.create_dataset()
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/deepchem/molnet/load_function/delaney_datasets.py", line 19, in create_dataset
+    dc.utils.data_utils.download_url(url=DELANEY_URL,
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/site-packages/deepchem/utils/data_utils.py", line 102, in download_url
+    urlretrieve(url, os.path.join(dest_dir, name))
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/urllib/request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/home/kamakshi.rautela/miniconda3/envs/neuro_final/lib/python3.10/urllib/request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 101] Network is unreachable>
+==========================================================
+JOB FINISHED AT: Sun May  3 10:05:49 PM IST 2026
+==========================================================

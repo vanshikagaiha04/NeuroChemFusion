@@ -1,0 +1,5 @@
+Starting NeuroChem Fusion V4 Optimized Run on H100...
+  File "/home/kamakshi.rautela/NeuroChem_Minor/train_neurochem_lipo.py", line 112
+    def to_tensor(ds): {/* unchanged */}
+                        ^
+SyntaxError: invalid syntax
